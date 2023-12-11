@@ -1,7 +1,7 @@
 body {
 
-color:#FFD700;
-background-color: #A52A2A;
+color:#1C1C1C;
+background-color: #F9F9F9;
 
 }
 
@@ -14,7 +14,7 @@ background-color: #A52A2A;
   box-sizing: border-box; }
 
 a {
-  color: #5f7; 
+  color: #ffff; 
   text-decoration: none;
     font-family: 'Luminari', sans-serif;
 }
@@ -24,7 +24,8 @@ a:hover{
   /*text-decoration: underline;*/
 }
 .nav_pad{
-  padding-top:40px;
+  padding-top:10px;
+    
 }
 .section{
   padding-top: 30px;
@@ -67,4 +68,28 @@ ul.disc{
     padding: 0px;
     margin-top: 20px;
     border: 0px dashed black;
+}
+
+
+/*逐渐消失图片效果 */
+.fade-in-image { animation: fadeIn 3s; }
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+
+/* 逐渐消失文字效果 */
+.fade-in-text {
+  font-family: 'ImperatorBronzeSmallCaps', sans-serif;
+  font-size: 150px;
+  animation: fadeIn 5s;
+}
+
+
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }

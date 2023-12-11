@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+}
+
+.leaf {
+    
+    background-color: #074f57;
+    background-image: url(../images/tree2.png);
+    color: white;
+    
+    padding-top: 40px;
+    padding-bottom: 100px;
+    padding-left: 10px;
+    padding-right: 10px
+}
+
+
+.leaf1 {
+    
+    background-color: #074f57;
+    background-image: url(../images/tree2.png);
+    color: white;
+    
+    padding-top: 40px;
+    padding-bottom: 100px;
+    padding-left: 10px;
+    padding-right: 10px
+}
+
+
+.container {
+    max-width: 1700px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: var(--white);
+   
+}
+
+.triangle{
+    position: absolute;
+    width: 0;
+    height: 0;
+    transform-origin: bottom center;
+    animation: expandAndDisappear 1s linear forwards;
+    animation-duration: 1s;
+}
+
+}
+
+.triangle-border-left {
+    transform: scaleX(1);
+    animation-name: change-left;
+}
+
+.triangle-border-right {
+    transform: scaleY(1);
+    animation-name: change-right;
+}
+
+
+.triangle-border-bottom {
+    transform: scaleZ(1);
+    animation-name: change-bottom;
+}
+
+
+
+
+
+@keyframes change-left {
+    0% {
+        transform: scaleX(0); 
+    }
+
+    100% {
+        transform: scaleX(1);  
+    }
+} 
+
+@keyframes change-right {
+    0% {
+        transform: scaleY(0); 
+    }
+
+    100% {
+        transform: scaleY(1);  
+    }
+}
+
+@keyframes change-bottom {
+    0% {
+        transform: scaleZ(0); 
+    }
+
+    100% {
+        transform: scaleZ(1);  
+    }
+}
+
+  @keyframes expandAndDisappear {
+    0% {
+      opacity: 1;
+      transform: scale(1);
+    }
+    100% {
+      opacity: 0;
+      transform: scale(2);
+    }
+    }
+    
